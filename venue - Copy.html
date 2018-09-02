@@ -21,9 +21,19 @@
 
 </script>
 
-    <link rel="stylesheet" href="css/gallery.min.css">
+<link rel="stylesheet" href="css/venue.min.css">
 
         <style>
+
+#map {
+    height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    }
 
         </style>
     </head>
@@ -81,72 +91,54 @@
 </div>
         <div id="content">
 
-    <div class="container">
-            <div class="row">
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/10.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/9.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/8.jpg" />
-                </div>
-
+    <div class="venue-container container">
+        <div id="map"></div>
+        <div class="modes row">
+            <div class="col-md-offset-1 col-md-4 col-sm-offset-3 col-sm-6 col-xs-10 col-xs-offset-1">
+                <img src="imgs/modes/car.png">
+                <h3 class="road">Road</h3>
+                <p>Kochi is well connected by road by 3 national highways and numerous other routes. Bus services are available from almost all major cities in Kerala, Tamil nadu and Karnataka. MEC is located 4 km from Edappally toll Jn on NH-47 and NH-17. Private and KSRTC bus stations are within 10km of the college.</p>
             </div>
-
-            <div class="row">
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/7.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/6.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/5.jpg" />
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/4.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/3.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/2.jpg" />
-                </div>
-
-                <div class="col-md-4 img-container">
-                    <img class="img-responsive gallery-image" src="imgs/gallery/1.jpg" />
-                </div>
-
-            </div>
-
-    </div>
-    <div id="window-container">
-        <div class="image-enlarged">
-            <div class="enlarged-image">
-                <img src="" id="window" />
-            </div>
-            <div class="controls">
-                <div class="arrow"><a id="prev">&lt; PREVIOUS</a></div>
-                <div><a id="close-window">CLOSE</a></div>
-                <div class="arrow"><a id="next">NEXT &gt;</a></div>
+            <div class="col-md-offset-2 col-md-4 col-sm-offset-3 col-sm-6 col-xs-10 col-xs-offset-1">
+                <img src="imgs/modes/train.png">
+                <h3>Rail</h3>
+                <p>Ernakulam is a major railway destination with trains running to all parts of the country. MEC is located 6 km from Ernakulam North Railway station, 10 km from Ernakulam South Railway station and 15 km from Aluva Railway Station.</p>
             </div>
         </div>
+        <div class="modes row">
+            <div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-10 col-xs-offset-1">
+                <img src="imgs/modes/air.png">
+                <h3>Air</h3>
+                <p>Kochi has an international airport connected by major aircraft operators. MEC is located 20 km from the Cochin International Airport along NH-47.</p>
+            </div>
+        </div>
+        <a target="_blank" href="https://www.google.co.in/maps/dir/?api=1&destination=Kerala+Chamber+of+Commerce+and+Industry" class="directions">Get Directions</a>
     </div>
+    <div class="container">
+        <h3>Within</h3>
+        <p>MEC can be reached from Edapally through buses along the Pookatupadi, Perumbavoor or Kothamangalam routes, disembarking at the Thrikkakkara temple bus stop. The college is about 1km from the bus stop.</p>
+        <p>It can also be reached from Kaloor Bus Stand or Ernakulam South and Ernakulam North railway stations by taking buses along the Kakkanad route to disembark at NGO quarters, located 1.5 km from MEC. Autorikshaws are available from both Thrikkakara and NGO quarters.</p>
+    </div>
+    <script>
+        var map;
+        function initMap() {
+
+        var myLatLng = {lat: 9.977211, lng: 76.277545};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 18
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: "KCCI Hall: Venue, TEDxMEC"
+        });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASuag7lvuXRCvnbG9thsUdkXiGkPWtzV0&callback=initMap"
+        async defer></script>
 
         </div>
 
@@ -189,6 +181,6 @@
     </body>
     <script src="js/jquery.min.js"></script>
 
-    <script src="js/gallery.min.js"></script>
+    <script src="js/navbar.min.js"></script>
 
 </html>
