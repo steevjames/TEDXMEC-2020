@@ -10,12 +10,7 @@ body {
 	margin: 0
 }
 
-article,
-aside,
-footer,
-header,
-nav,
-section {
+article, aside, footer, header, nav, section {
 	display: block
 }
 
@@ -24,9 +19,7 @@ h1 {
 	margin: .67em 0
 }
 
-figcaption,
-figure,
-main {
+figcaption, figure, main {
 	display: block
 }
 
@@ -56,19 +49,15 @@ abbr[title] {
 	text-decoration: underline dotted
 }
 
-b,
-strong {
+b, strong {
 	font-weight: inherit
 }
 
-b,
-strong {
+b, strong {
 	font-weight: bolder
 }
 
-code,
-kbd,
-samp {
+code, kbd, samp {
 	font-family: monospace, monospace;
 	font-size: 1em
 }
@@ -86,8 +75,7 @@ small {
 	font-size: 80%
 }
 
-sub,
-sup {
+sub, sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
@@ -102,8 +90,7 @@ sup {
 	top: -.5em
 }
 
-audio,
-video {
+audio, video {
 	display: inline-block
 }
 
@@ -120,46 +107,31 @@ svg:not(:root) {
 	overflow: hidden
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
 	font-family: sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0
 }
 
-button,
-input {
+button, input {
 	overflow: visible
 }
 
-button,
-select {
+button, select {
 	text-transform: none
 }
 
-[type=reset],
-[type=submit],
-button,
-html [type=button] {
+[type=reset], [type=submit], button, html [type=button] {
 	-webkit-appearance: button
 }
 
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
-button::-moz-focus-inner {
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
 	border-style: none;
 	padding: 0
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
-button:-moz-focusring {
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
 	outline: 1px dotted ButtonText
 }
 
@@ -185,14 +157,12 @@ textarea {
 	overflow: auto
 }
 
-[type=checkbox],
-[type=radio] {
+[type=checkbox], [type=radio] {
 	box-sizing: border-box;
 	padding: 0
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
 	height: auto
 }
 
@@ -201,8 +171,7 @@ textarea {
 	outline-offset: -2px
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
 	-webkit-appearance: none
 }
 
@@ -211,8 +180,7 @@ textarea {
 	font: inherit
 }
 
-details,
-menu {
+details, menu {
 	display: block
 }
 
@@ -317,9 +285,7 @@ template {
 	margin: 90px auto
 }
 
-a,
-a:active,
-a:hover {
+a, a:active, a:hover {
 	text-decoration: none
 }
 
@@ -327,8 +293,7 @@ a:hover {
 	overflow-y: hidden
 }
 
-#content,
-#footer-outer {
+#content, #footer-outer {
 	will-change: filter;
 	transition: filter .3s
 }
@@ -598,9 +563,7 @@ a:hover {
 		flex-wrap: wrap;
 		justify-content: space-between
 	}
-	.footer .connect-footer,
-	.footer .mec-footer,
-	.footer .tedxmec-footer {
+	.footer .connect-footer, .footer .mec-footer, .footer .tedxmec-footer {
 		margin-bottom: 20px;
 		width: unset
 	}
@@ -748,8 +711,7 @@ body {
 	}
 }
 
-p,
-ul {
+p, ul {
 	font-family: Poppins, sans-serif
 }
 
@@ -765,17 +727,14 @@ h2 {
 	color: #e62b1e
 }
 
-#navabt,
-#navgal,
-#navspe,
-#navven {
+#navabt, #navgal, #navspe, #navven {
 	color: #000
 }
 
 .homeland {
-	height: 500px;
+	/* height: 500px; */
 	position: relative;
-	background-image: url(../imgs/about.jpg?2);
+	background-image: url(../imgs/comingsoon.jpg);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -830,8 +789,7 @@ h2 {
 	position: relative
 }
 
-.tedx h2,
-.tedx p {
+.tedx h2, .tedx p {
 	width: 65%;
 	padding: 5px 30px;
 	box-sizing: border-box;
@@ -850,138 +808,132 @@ h2 {
 	transform: translateY(-50%)
 }
 
-@media (max-width:600px) {
-	.tedx h2,
-	.tedx p {
-		width: 90%;
-		padding: 0;
-		margin: auto;
-		text-align: justify
-	}
-	.tedx img {
-		position: static;
-		top: unset;
-		transform: none;
-		width: 90%;
-		margin: 30px auto;
-		display: block
-	}
-}
-
-.tedxmec-container {
-	display: flex;
-	justify-content: space-around
-}
-
-.tedxmec-container .x-png {
-	width: 46%;
-	background-image: url(../imgs/college.jpg);
-	background-size: contain;
-	background-position: center;
-	background-color: #2d2321;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	margin: auto
-}
-
-.tedxmec-container .x-png img {
-	width: 100%;
-	margin: auto;
-	display: block
-}
-
-.tedxmec-container .tedxmec {
-	width: 50%
-}
-
-.tedxmec-container .tedxmec .para-head::after {
-	left: 0;
-	transform: none
+.headerimage {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 @media (max-width:600px) {
+	.headerimage {
+		width: 100%;
+		margin: 0;
+		margin-top: 80px;
+	}
+		.tedx h2, .tedx p {
+			width: 90%;
+			padding: 0;
+			margin: auto;
+			text-align: justify
+		}
+		.tedx img {
+			position: static;
+			top: unset;
+			transform: none;
+			width: 90%;
+			margin: 30px auto;
+			display: block
+		}
+	}
 	.tedxmec-container {
-		flex-wrap: wrap
+		display: flex;
+		justify-content: space-around
 	}
 	.tedxmec-container .x-png {
-		width: 60%;
-		background-attachment: scroll;
-		background-size: cover
+		width: 46%;
+		background-image: url(../imgs/college.jpg);
+		background-size: contain;
+		background-position: center;
+		background-color: #2d2321;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		margin: auto
+	}
+	.tedxmec-container .x-png img {
+		width: 100%;
+		margin: auto;
+		display: block
 	}
 	.tedxmec-container .tedxmec {
-		width: 90%
+		width: 50%
 	}
-	.tedxmec-container .tedxmec p {
-		text-align: justify
+	.tedxmec-container .tedxmec .para-head::after {
+		left: 0;
+		transform: none
 	}
-}
-
-.theme-container {
-	position: relative;
-	margin-bottom: 0;
-	background-color: #373833;
-	background-repeat: repeat;
-	padding: 40px
-}
-
-.theme-container .overlay-theme {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background-image: url(../imgs/theme.png);
-	z-index: 0
-}
-
-.theme-container p {
-	color: #fff
-}
-
-.theme-container .mec-theme {
-	z-index: 1;
-	position: relative
-}
-
-.theme-container .mec-theme .bold-head {
-	color: #bf3642;
-	text-align: center;
-	font-weight: bolder;
-	font-size: 50px
-}
-
-.theme-container .mec-theme ul {
-	color: #bf3642
-}
-
-.theme-container .mec-theme ul li p {
-	color: #fff
-}
-
-.theme-container a.register-link {
-	padding: 10px;
-	background: #fff;
-	border-radius: 5px;
-	margin: auto;
-	color: #ff4431
-}
-
-@media (max-width:600px) {
+	@media (max-width:600px) {
+		.tedxmec-container {
+			flex-wrap: wrap
+		}
+		.tedxmec-container .x-png {
+			width: 60%;
+			background-attachment: scroll;
+			background-size: cover
+		}
+		.tedxmec-container .tedxmec {
+			width: 90%
+		}
+		.tedxmec-container .tedxmec p {
+			text-align: justify
+		}
+	}
 	.theme-container {
-		padding: 15px;
-		text-align: justify
+		position: relative;
+		margin-bottom: 0;
+		background-color: #373833;
+		background-repeat: repeat;
+		padding: 40px
+	}
+	.theme-container .overlay-theme {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-image: url(../imgs/theme.png);
+		z-index: 0
+	}
+	.theme-container p {
+		color: #fff
+	}
+	.theme-container .mec-theme {
+		z-index: 1;
+		position: relative
 	}
 	.theme-container .mec-theme .bold-head {
-		font-size: 30px
+		color: #bf3642;
+		text-align: center;
+		font-weight: bolder;
+		font-size: 50px
 	}
 	.theme-container .mec-theme ul {
-		font-size: 15px
+		color: #bf3642
 	}
 	.theme-container .mec-theme ul li p {
 		color: #fff
 	}
-}
-
-.regbuttons {
-	text-align: center;
-}
+	.theme-container a.register-link {
+		padding: 10px;
+		background: #fff;
+		border-radius: 5px;
+		margin: auto;
+		color: #ff4431
+	}
+	@media (max-width:600px) {
+		.theme-container {
+			padding: 15px;
+			text-align: justify
+		}
+		.theme-container .mec-theme .bold-head {
+			font-size: 30px
+		}
+		.theme-container .mec-theme ul {
+			font-size: 15px
+		}
+		.theme-container .mec-theme ul li p {
+			color: #fff
+		}
+	}
+	.regbuttons {
+		text-align: center;
+	}
