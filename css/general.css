@@ -1,0 +1,35 @@
+#noticeBannerContainer {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+#noticeBanner {
+    border: 1px solid #FF4431;
+    border-radius:5px;
+    padding: 20px;
+    margin: 3px;
+}
+
+.redButton {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 10px 60px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #noticeBannerContainer {
+        font-size: 18px;
+    }
+    .redButton {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+}
